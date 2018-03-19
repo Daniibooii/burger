@@ -1,10 +1,10 @@
 
 
+-- dummy data goes here --
 
 
 
-
- In this file, write insert queries to populate the burgers table with at least three entries.
+In this file, write insert queries to populate the burgers table with at least three entries.
 
 
 
