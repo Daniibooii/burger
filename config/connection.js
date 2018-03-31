@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 
   // Your password
   password: "OreoOreo29!",
-  database: "play_listDB"
+  database: "burgers_db"
 });
 
 connection.connect(function(err) {
@@ -84,6 +84,22 @@ function afterConnection() {
   });
 }
 
+// template below //
+var mysql = require("mysql");
+var connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "burgers_db"
+});
+connection.connect(function(err) {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
+module.exports = connection;
 
 // instructions below //
 // setup the code to connect Node to MySQL.
